@@ -45,7 +45,11 @@
 
 | Ảnh | SAM (phiên bản) | Số click | Mask gồm người lái / hàng hoá? | Lỗi quan sát | File trong `masks/` |
 |---|---|---|---|---|---|
-| <<img_0xx>> | <<>> | <<>> | <<>> | <<>> | <<>> |
+| img_013 (tuk-tuk, người lái + khách ngồi sau) | SAM 2.1 base (`sam2.1_b.pt`) | 3 (2 dương, 1 âm) | Gồm người lái (áo, quần, chân) và phần người ngồi sau; hàng hoá không có | Một click âm trên người lái không đủ để loại người lái ra khỏi mask; mask có lỗ nhỏ ở vùng áo người lái | `masks/tuktuk_img013_sam2.jpg` |
+| img_013 (thêm 2 điểm âm: đầu, chân người lái) | SAM 2.1 base | 5 (2 dương, 3 âm) | Loại được cả người lái lẫn người ngồi sau; chỉ còn xe | Tách người xong thì mask xe bị vỡ: mái và thân còn nhiều lỗ, bánh sau và sàn xe không còn trong mask (13.5% ảnh, 2 polygon). Thêm điểm âm gần xe có thể làm mất luôn phần xe kề đó, cần thêm điểm dương | `masks/tuktuk_img013_sam2_neg3.jpg` |
+| img_013 (cùng toạ độ) | MobileSAM (SAM 1, `mobile_sam.pt`) | 3 (2 dương, 1 âm) | Loại được thân người lái (theo click âm) nhưng mask còn dính một mảng ở mặt; người ngồi sau không nằm trong mask | Mask rời rạc ở sàn xe, chắn bùn và phần đầu xe bên phải, kém đầy đủ hơn SAM 2.1 | `masks/tuktuk_img013_sam1.jpg` |
+| img_004 (tuk-tuk xanh-đỏ ở phải) | SAM 2.1 base | 3 (2 dương, 1 âm) | Chỉ gồm xe (mái, thân, bánh trước), không có người | Click dương thứ hai nằm trên mặt đất dưới bánh nên mask lem ra vài điểm nền; YOLO26 ở lượt r03 không có box cho xe này, nên SAM theo điểm bắt được vật mà detector bỏ sót | `masks/tuktuk_img004_sam2.jpg` |
+| img_017 (tuk-tuk xanh-cam) | SAM 2.1 base | 3 (2 dương, 1 âm) | Gồm cả xe lẫn nội thất (ghế); không thấy người hay hàng hoá trong xe | Click âm đặt trên mái xe (chữ trên mái) nên đặt sai chỗ: mask vẫn phủ mái, tức click âm bị bỏ qua; mask đủ, khít | `masks/tuktuk_img017_sam2.jpg` |
 
 - Đối chiếu guideline mục 4.2: quy tắc nào giúp, quy tắc nào thiếu? <<>>
 - *(Tuỳ chọn)* Interactor SAM trong CVAT: làm được / không (lỗi gì, đã thử gì); khác gì offline: <<>>

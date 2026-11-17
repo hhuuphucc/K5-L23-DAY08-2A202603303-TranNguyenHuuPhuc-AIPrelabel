@@ -87,7 +87,7 @@ Việc cần làm tiếp: sửa 6 lỗi QC trong CVAT (xoá box trùng, sửa bo
 
 ## 8. Ghi chú cá nhân
 
-- **Dùng AI để hỗ trợ:** tôi dùng Claude (Claude Code) để hướng dẫn cài đặt, đọc tài liệu lab
+- **Dùng AI để hỗ trợ:** dùng Claude (Claude Code) để hướng dẫn cài đặt, đọc tài liệu lab
 - Gold có bị nhiễm không? **Không**: `gold_manual.json` được export trước mọi lần chạy model (file pre-label sớm nhất tạo sau gold), tôi không chạy model lên 4 ảnh gold và không xem `data/cache/`, và AI không nhìn ảnh gold trước khi tôi gán xong. Chỉ có **bẫy** bị lộ: lần chạy `review_stats.py` sớm in danh sách ảnh bẫy (xem mục 3).
 - Máy / GPU / CVAT: Windows 11, Python 3.14.7, torch CPU (2.15.0+cpu; có RTX 3050 Ti nhưng chưa dùng CUDA); CVAT Docker v2.74.1 (cũ hơn bản 2.81 trong hướng dẫn: hộp thoại xác nhận **Replace annotations** hiện sau khi bấm OK ở bước Upload annotations).
 - Dùng cache `data/cache/` thay vì tự chạy? **Không**; tôi tự chạy YOLO26 và YOLOE cho 36 ảnh.

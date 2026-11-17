@@ -1,0 +1,10 @@
+image,object_id,error_type,reviewer,note
+img_003.jpg,19,thua,hhuuphucc,"three_wheeler 0.21 là box trùng với #18 trên cùng một xe ba gác (box bị giữ lại sau review)"
+img_003.jpg,20,thua,hhuuphucc,"three_wheeler 0.20 phủ vùng người đi bộ và xe máy bên phải, không phải xe ba bánh"
+img_008.jpg,,khong,hhuuphucc,"3 xe ba bánh (#105 #106 #107) và người đều có box; không thấy lỗi rõ"
+img_014.jpg,,khong,hhuuphucc,"không thấy lỗi rõ ở cụm xe máy và người gánh hàng"
+img_017.jpg,,khong,hhuuphucc,"3 tuk-tuk và 2 người đều có box; không thấy lỗi rõ"
+img_035.jpg,508,thua,hhuuphucc,"một xích lô bị chia thành hai box three_wheeler (#508 0.48 và #521 0.38); #508 chỉ phủ phần mui, giữ một box ôm cả xe"
+img_005.jpg,52,sai_vi_tri_kich_thuoc,hhuuphucc,"box person 0.69 [0.3,670.6,296.9,351.3] chỉ có cánh tay và vai ở mép trái nhưng kéo ngang và xuống đáy ảnh, trùm cả xe tay ga trắng (#61 motorbike)"
+img_024.jpg,309,sai_vi_tri_kich_thuoc,hhuuphucc,"box car 0.88 lệch lên nóc xe SUV ở giữa ngã tư, cắt ngang thân và bánh xe; đây là bẫy loose bị lọt (CAL-06)"
+img_028.jpg,,bo_sot,hhuuphucc,"bỏ sót xe máy sát mép trái ảnh (x~0, y~435, thấy bánh trước và đầu xe, cạnh #400 và #406); đây là bẫy missing bị lọt (CAL-06)"

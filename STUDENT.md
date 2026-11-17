@@ -5,7 +5,7 @@
 - Lớp (L2 / L3 / khác): L2
 - Tài khoản GitHub: hhuuphucc
 - Repo bài nộp (URL): https://github.com/hhuuphucc/K5-L23-DAY08-2A202603303-TranNguyenHuuPhuc-AIPrelabel
-- Commit chốt bài (hash): 8f684b4
+- Commit chốt bài (hash): 90f936f
 - Máy: Windows 11 Pro, CPU (torch 2.15.0+cpu; có GPU RTX 3050 Ti nhưng chưa dùng CUDA)
 - CVAT (Docker): v2.74.1
 
